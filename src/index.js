@@ -93,7 +93,7 @@ app.post("/login", async (req, res) => {
 
 
 // Define Port for Application
-const port = 5000;
-app.listen(port, () => {
+const PORT = process.env.PORT ||5000;
+app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${port}`)
 });
